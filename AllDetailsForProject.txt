@@ -1,0 +1,21 @@
+Setting up AeroCon.
+Start with npm init. 
+Download express and ejs.
+And write the first four lines just as it is.
+Also don't forget the server.listen() to listen to the project
+
+Made a views folder to keep all the '.ejs' files (Embedded Javascript) where we can write js along with html.
+
+app.get is used to deploy some command on entering the website
+res.status(200).send("hello World") ..... used to send test to the webpage.
+res.render("file") ..... is used to deploy ejs file on loading a webpage
+
+Next I used uuid package library and v4 version of it to create a unique id for all the users or rooms.
+In the line app.get("/:room"...) ..... here room is a parameter which will take the unique room id from app.get("/") which will get redirected to it.
+Then '''roomId: req.params.room''' means that a variable roomId is created that will take the value of room(unique id, uuid) that is being passed to this function.
+
+Now script.js will conatin our js for all the frontend.
+
+Now I have used socket.io to establish a connection between me and the other person on the video chat.
+
+Then I downloaded peer.js in my project to enable WebDTC connection to communicate

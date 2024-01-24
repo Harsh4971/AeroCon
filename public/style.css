@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.video-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* min-width: 15rem;
+    max-width: 70rem;
+    height: auto; */
+    /* padding: 2rem; */
+    /* background-color: bisque; */
+}
+
+video {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 25rem;
+    height: auto;
+    transform: scaleX(-1);
+    object-fit: cover;
+    border: 2px solid rgb(78, 76, 76);
+}
+ 
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.main__videos {
+    flex-grow: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    /* overflow: scroll; */
+}
+
+.main__controls {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c1e20;
+    color: #d2d2d2;
+    padding: 0.5rem;
+}
+
+.main__controls__blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__controls__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.3rem;
+    padding-bottom: 0.1rem;
+    min-width: 5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.main__controls__button i {
+    font-size: 1.25rem;
+}
+
+.main__controls__button:hover{
+    background-color: #343434;
+    border-radius: 5px;
+}
+
+.leave_meeting {
+    color: #eb534b;
+}
+
+.main__right {
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+}
+
+.main__header {
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.main__chat__window {
+    flex-grow: 1;
+    overflow: scroll;
+}
+
+.main__message__container {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    padding-bottom: 0.6rem;
+}
+
+#chat_message {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 2rem;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    border: 1px solid rgb(78, 76, 76);
+    border-radius: 5px;
+    background-color: transparent;
+    color: #f5f5f5;
+}
+
+.messages {
+    color: #f5f5f5;
+    list-style-type: none;
+    font-size: 5rem;
+    padding-left: 1rem;
+}
+
+.message {
+    margin-top: 0.3rem;
+}
+
+.unmute, .stop{
+    color: #eb534b;
+}
